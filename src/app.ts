@@ -1,5 +1,6 @@
 import fastify from 'fastify'
+import { appRoutes } from './http/routes'
 
 export const app = fastify()
 
-// ORM - Object Relation Mapper
+app.register(appRoutes)
