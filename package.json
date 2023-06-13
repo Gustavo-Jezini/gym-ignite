@@ -4,10 +4,11 @@
   "description": "Gympass style app;",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsx watch src/server.ts",
     "build": "tsup src --out-dir build",
-    "start:homolog": "node build/server.js"
+    "start:homolog": "node build/server.js",
+    "test": "vitest",
+    "test:watch": "vitest run"
   },
   "keywords": [],
   "author": "",
