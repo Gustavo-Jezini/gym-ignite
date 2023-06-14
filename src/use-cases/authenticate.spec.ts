@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { InMemoryUsersRepository } from '@/repositories/in-memory/in-memory-users-repository'
 import { AuthenticateUseCase } from './authenticate'
 import { hash } from 'bcryptjs'
 import { InvalidCredentialsError } from './errors/invalid-credentials-error'
+import { InMemoryUsersRepository } from '@/repositories/in-memory/in-memory-users-repository'
 
 // const usersRepository = new InMemoryUsersRepository()
 // const sut = new AuthenticateUseCase(usersRepository)
