@@ -43,7 +43,7 @@ export class InMemoryGymsRepository implements GymsRepository {
 
     return this.items.filter((gym) => {
       const distance = getDistanceBetweenCoordinates(
-        { latitude: params.latidude, longitude: params.longitude },
+        { latitude: params.latitude, longitude: params.longitude },
         {
           latitude: gym.latitude.toNumber(),
           longitude: gym.longitude.toNumber(),

@@ -18,7 +18,7 @@ export class FetchNearbyGymsCase {
     userLongitude,
   }: FetchNearbyGymsCaseRequest): Promise<FetchNearbyGymsCaseResponse> {
     const gyms = await this.gymsRepository.findManyNearby({
-      latidude: userLatitude,
+      latitude: userLatitude,
       longitude: userLongitude,
     })
 
